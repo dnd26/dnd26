@@ -23,7 +23,7 @@
 
 ### What I Build
 
-I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**, and **production internal web apps** — currently working as an **AI Specialist / Automation** at [Blue Sky Corporation](https://www.blueskycorp.com.vn/) while completing my **B.Sc. in Data Science** at [IUH](https://iuh.edu.vn/) (`GPA 3.13/4.0`).
+I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**, and **AI-accelerated internal web platforms** — currently working as an **AI Specialist / Automation** at [Blue Sky Corporation](https://www.blueskycorp.com.vn/) while completing my **B.Sc. in Data Science** at [IUH](https://iuh.edu.vn/) (`GPA 3.13/4.0`).
 
 <p align="center">
   <picture>
@@ -42,8 +42,8 @@ I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**
 | **AI Auto-Recruiter & CV Screening Pipeline** *(Enterprise)* | Automated Gmail ingestion, PDF OCR via Drive API (with rate-limit retries), and **Gemini API** weighted candidate scoring against JDs, plus AI-assisted JD & social post generation. | `Gemini API` `Google Apps Script` `Drive API` `Gmail` `Sheets` | *Internal @ Blue Sky* |
 | **Potential Customer Scoring System** | Automated streaming pipeline `MongoDB → PostgreSQL` orchestrated via **Apache Airflow** in **Docker**, serving real-time lead scoring via **Flask** on **AWS**. | `Python` `Airflow` `Docker` `MongoDB` `PostgreSQL` `Flask` `AWS` | [GitHub ↗](https://github.com/dnd26/HE-THONG-CHAM-DIEM-KHACH-HANG-TIEM-NANG) |
 | **Credit Scoring Application** *(Lending Club)* | End-to-end credit risk pipeline with **WoE / IV** feature selection benchmarking **LogReg, RF, XGBoost, LightGBM, CatBoost & Deep Learning** (`ROC-AUC`, `Precision`, `Loss`). | `Python` `XGBoost` `LightGBM` `CatBoost` `TensorFlow` `Scikit-learn` | [Kaggle ↗](https://www.kaggle.com/code/skai2002/lending-club-eda) |
-| **FMCG Activation, QC & HR Suite** *(Enterprise)* | AI-accelerated full-stack web apps with **PostGIS** reverse geocoding, client-side photo compression, **4-tier RBAC** (`RLS`), shift/payroll tracking, QR/WebRTC check-in & multi-sheet Excel exports. | `React` `TypeScript` `Tailwind` `Supabase` `PostgreSQL` `PostGIS` `Vercel` | *Internal @ Blue Sky* |
-| **Operations & Document Automation Suite** *(Enterprise)* | Cross-department workflows replacing manual ops: Python/Colab auto-oriented `.pptx` progress report generator from Drive, multi-sheet Excel/VAT consolidation, and automated event/sales reporting. | `Python` `n8n` `Power Automate` `Make` `Google Apps Script` `SQL` | *Internal @ Blue Sky* |
+| **BSC Internal Suite: HR, Admin & Workload** *(Enterprise)* | Full-stack internal platforms built with **Supabase RLS**: **App HR** *(part-time/full-time profiles, attendance, payroll, BHXH, meeting room/flight/stationery booking)* & **App Workload BSC** *(project tracking, task handover & KPI scoring)*. | `React` `TypeScript` `Tailwind` `Supabase` `PostgreSQL` `Vercel` | *Internal @ Blue Sky* |
+| **Event & Field Activation Web Apps** *(Enterprise)* | Mobile-first **QR/WebRTC event check-in** and **real-time sales/activation reporting** for school & supermarket campaigns with **PostGIS** reverse geocoding, photo compression & automated Excel/`.pptx` report generation. | `React` `TypeScript` `Supabase` `PostGIS` `Python` `n8n` `Apps Script` | *Internal @ Blue Sky* |
 
 ---
 
@@ -64,10 +64,10 @@ I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**
 
 #### Work Experience
 - **AI Specialist / Automation** — [Blue Sky Corporation – Marketing Activities](https://www.blueskycorp.com.vn/) *(11/2025 – Present · Ho Chi Minh City)*
-  - **LLM & Recruitment Automation:** Built an automated candidate screening system integrating **Gemini API**, Gmail, Drive OCR, and Google Sheets to classify applications, score CVs against weighted JDs, and generate recruitment content.
-  - **AI-Accelerated Full-Stack Systems:** Architected and deployed production internal web apps (Field Activation, QC Check-in, HR/Payroll, QR Event Check-in) using React, TypeScript, Supabase (`RLS`, Storage optimization, `PostGIS`), and Vercel.
-  - **Workflow & Document Automation:** Automated sales reporting, Excel/VAT aggregation, and `.pptx` progress report generation from Google Drive using `Python`, `n8n`, `Google Apps Script`, `Make`, and `Power Automate`.
-  - **System Governance & Delivery:** Designed database schemas, managed 4-tier RBAC, handled live production debugging/UAT, and trained operational teams.
+  - **AI & Workflow Automation:** Built LLM-powered pipelines (**Gemini API**, Drive OCR, Gmail) for automated CV screening & JD generation; assessed operational workflows to automate cross-department processes and reporting using `n8n`, `Google Apps Script`, and `Power Automate`.
+  - **Full-Stack & Database Architecture:** Analyzed business requirements, designed `Supabase/PostgreSQL` schemas, and built AI-accelerated production web apps (`React`, `TypeScript`) including **App HR** *(part-time/full-time HR, payroll, BHXH, admin booking)*, **App Workload BSC** *(project tracking, handover, KPI scoring)*, and **Event/Activation Apps** *(QR check-in, real-time sales reporting)*.
+  - **RBAC Governance & Campaign Operations:** Managed full user lifecycle and 4-tier RBAC (`Admin`, `Supervisor`, `QC`, `Field/Store`); configured promotional rules *(gift redemption, sampling, lucky-draw)* and shift inventory tracking while resolving live data-sync and stock discrepancies.
+  - **QA, Deployment & Enablement:** Optimized mobile UX and data sync, authored test cases, executed functional testing/debugging and production deployments, wrote user manuals, and trained internal and field teams.
 
 #### Education & Activities
 - **Industrial University of Ho Chi Minh City (IUH)** — B.Sc. in Data Science *(10/2020 – Present · GPA: 3.13/4.0)*
