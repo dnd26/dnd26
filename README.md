@@ -7,16 +7,10 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/skai2002" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-skai2002-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://www.kaggle.com/skai2002" target="_blank">
-    <img src="https://img.shields.io/badge/Kaggle-skai2002-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle" />
-  </a>
-  <a href="mailto:nguyendat103261@gmail.com">
-    <img src="https://img.shields.io/badge/Email-nguyendat103261%40gmail.com-1E293B?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <img src="https://img.shields.io/badge/Location-Ho%20Chi%20Minh%20City%2C%20VN-0F766E?style=flat-square" alt="Location" />
+  <a href="https://www.linkedin.com/in/skai2002" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-skai2002-0F172A?style=for-the-badge&labelColor=0A66C2" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://www.kaggle.com/skai2002" target="_blank"><img src="https://img.shields.io/badge/KAGGLE-skai2002-0F172A?style=for-the-badge&logo=kaggle&logoColor=white&labelColor=20BEFF" alt="Kaggle" /></a>&nbsp;
+  <a href="mailto:nguyendat103261@gmail.com"><img src="https://img.shields.io/badge/EMAIL-nguyendat103261%40gmail.com-0F172A?style=for-the-badge&logo=gmail&logoColor=white&labelColor=6366F1" alt="Email" /></a>&nbsp;
+  <img src="https://img.shields.io/badge/HCMC-VIETNAM-0F172A?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=10B981" alt="Location" />
 </p>
 
 ---
