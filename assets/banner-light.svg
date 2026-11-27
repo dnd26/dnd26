@@ -1,0 +1,63 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-light" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <pattern id="grid-light" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#0F172A" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent-line-light" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="50%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Container -->
+  <rect width="1200" height="260" rx="16" fill="url(#bg-light)"/>
+  <rect width="1200" height="260" rx="16" fill="url(#grid-light)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="258.5" rx="15.25" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="url(#accent-line-light)"/>
+
+  <!-- Left Identity Block -->
+  <rect x="48" y="42" width="234" height="28" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+  <circle cx="65" cy="56" r="4" fill="#059669"/>
+  <text x="77" y="60" fill="#065F46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.4">OPEN TO OPPORTUNITIES · HCMC</text>
+
+  <text x="48" y="122" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8">DO NGUYEN DAT</text>
+
+  <text x="48" y="156" fill="#1D4ED8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.2">AI Automation &amp; System Builder</text>
+
+  <text x="48" y="186" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400">Building internal web apps, cross-department automations</text>
+  <text x="48" y="207" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400">&amp; data pipelines for live business operations.</text>
+
+  <!-- Quick Facts Row -->
+  <text x="48" y="236" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="500">AI Specialist @ Blue Sky Corp  ·  Data Science @ IUH (GPA 3.13/4.0)</text>
+
+  <!-- Right Minimal System Topology Card -->
+  <rect x="740" y="38" width="416" height="184" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="762" y="64" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="1.2">PRODUCTION ARCHITECTURE</text>
+  <circle cx="1132" cy="60" r="3.5" fill="#059669"/>
+  <text x="1092" y="64" fill="#059669" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">LIVE</text>
+
+  <!-- Node 1 -->
+  <rect x="762" y="82" width="174" height="52" rx="9" fill="#F8FAFC" stroke="#93C5FD" stroke-width="1"/>
+  <text x="775" y="102" fill="#1D4ED8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">01 · WEB SYSTEMS</text>
+  <text x="775" y="121" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600">React · TS · Supabase</text>
+
+  <!-- Connector 1 -> 2 -->
+  <path d="M 936 108 L 958 108" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <polygon points="956,104 963,108 956,112" fill="#2563EB"/>
+
+  <!-- Node 2 -->
+  <rect x="964" y="82" width="172" height="52" rx="9" fill="#F8FAFC" stroke="#5EEAD4" stroke-width="1"/>
+  <text x="977" y="102" fill="#0F766E" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">02 · AUTOMATION</text>
+  <text x="977" y="121" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600">n8n · Power Automate</text>
+
+  <!-- Node 3 (Full Bottom) -->
+  <rect x="762" y="148" width="374" height="52" rx="9" fill="#F8FAFC" stroke="#A5B4FC" stroke-width="1"/>
+  <text x="775" y="168" fill="#4338CA" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">03 · DATA, ML &amp; OPERATIONS GOVERNANCE</text>
+  <text x="775" y="187" fill="#0F172A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600">Python · Airflow · Docker · RBAC · UAT · AWS</text>
+</svg>
