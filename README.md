@@ -75,3 +75,6 @@ I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**
 <p align="center">
   <sub>Open to <b>AI Engineer</b>, <b>AI Specialist</b>, <b>AI Automation</b> &amp; <b>ML/Data Engineering</b> roles — reach me at <a href="mailto:nguyendat103261@gmail.com">nguyendat103261@gmail.com</a></sub>
 </p>
+<p align="center">
+  <img src="./assets/robot-footer.svg?v=1" alt="AI Agent Robot Animation" width="100%" />
+</p>
