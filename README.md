@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg" />
-    <img alt="Do Nguyen Dat — AI Engineer & Automation Specialist" src="./assets/banner-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg?v=2" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg?v=2" />
+    <img alt="Do Nguyen Dat — AI Engineer & Automation Specialist" src="./assets/banner-dark.svg?v=2" width="100%" />
   </picture>
 </p>
 
@@ -27,9 +27,9 @@ I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/pillars-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/pillars-light.svg" />
-    <img alt="Core Engineering Pillars" src="./assets/pillars-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/pillars-dark.svg?v=2" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/pillars-light.svg?v=2" />
+    <img alt="Core Engineering Pillars" src="./assets/pillars-dark.svg?v=2" width="100%" />
   </picture>
 </p>
 
@@ -39,7 +39,6 @@ I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**
 
 | Project / System | Architecture & Impact | Stack | Link |
 | :--- | :--- | :--- | :---: |
-| **AI Auto-Recruiter & CV Screening Pipeline** *(Enterprise)* | Automated Gmail ingestion, PDF OCR via Drive API (with rate-limit retries), and **Gemini API** weighted candidate scoring against JDs, plus AI-assisted JD & social post generation. | `Gemini API` `Google Apps Script` `Drive API` `Gmail` `Sheets` | *Internal @ Blue Sky* |
 | **Potential Customer Scoring System** | Automated streaming pipeline `MongoDB → PostgreSQL` orchestrated via **Apache Airflow** in **Docker**, serving real-time lead scoring via **Flask** on **AWS**. | `Python` `Airflow` `Docker` `MongoDB` `PostgreSQL` `Flask` `AWS` | [GitHub ↗](https://github.com/dnd26/HE-THONG-CHAM-DIEM-KHACH-HANG-TIEM-NANG) |
 | **Credit Scoring Application** *(Lending Club)* | End-to-end credit risk pipeline with **WoE / IV** feature selection benchmarking **LogReg, RF, XGBoost, LightGBM, CatBoost & Deep Learning** (`ROC-AUC`, `Precision`, `Loss`). | `Python` `XGBoost` `LightGBM` `CatBoost` `TensorFlow` `Scikit-learn` | [Kaggle ↗](https://www.kaggle.com/code/skai2002/lending-club-eda) |
 | **BSC Internal Suite: HR, Admin & Workload** *(Enterprise)* | Full-stack internal platforms built with **Supabase RLS**: **App HR** *(part-time/full-time profiles, attendance, payroll, BHXH, meeting room/flight/stationery booking)* & **App Workload BSC** *(project tracking, task handover & KPI scoring)*. | `React` `TypeScript` `Tailwind` `Supabase` `PostgreSQL` `Vercel` | *Internal @ Blue Sky* |
@@ -64,7 +63,7 @@ I design and ship **LLM-powered workflows**, **end-to-end automation pipelines**
 
 #### Work Experience
 - **AI Specialist / Automation** — [Blue Sky Corporation – Marketing Activities](https://www.blueskycorp.com.vn/) *(11/2025 – Present · Ho Chi Minh City)*
-  - **AI & Workflow Automation:** Built LLM-powered pipelines (**Gemini API**, Drive OCR, Gmail) for automated CV screening & JD generation; assessed operational workflows to automate cross-department processes and reporting using `n8n`, `Google Apps Script`, and `Power Automate`.
+  - **AI & Workflow Automation:** Assessed operational workflows to design and automate cross-department processes, reporting, and document generation using `n8n`, `Google Apps Script`, `Power Automate`, and `Python`.
   - **Full-Stack & Database Architecture:** Analyzed business requirements, designed `Supabase/PostgreSQL` schemas, and built AI-accelerated production web apps (`React`, `TypeScript`) including **App HR** *(part-time/full-time HR, payroll, BHXH, admin booking)*, **App Workload BSC** *(project tracking, handover, KPI scoring)*, and **Event/Activation Apps** *(QR check-in, real-time sales reporting)*.
   - **RBAC Governance & Campaign Operations:** Managed full user lifecycle and 4-tier RBAC (`Admin`, `Supervisor`, `QC`, `Field/Store`); configured promotional rules *(gift redemption, sampling, lucky-draw)* and shift inventory tracking while resolving live data-sync and stock discrepancies.
   - **QA, Deployment & Enablement:** Optimized mobile UX and data sync, authored test cases, executed functional testing/debugging and production deployments, wrote user manuals, and trained internal and field teams.
