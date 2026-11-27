@@ -1,73 +1,136 @@
-<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-dark" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="55%" stop-color="#111927"/>
-      <stop offset="100%" stop-color="#0F172A"/>
+    
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120" />
+      <stop offset="55%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#13112B" />
     </linearGradient>
-    <radialGradient id="glow-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 40) rotate(135) scale(460 280)">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.32"/>
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+
+    <linearGradient id="topAccent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="420" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+
+    <linearGradient id="agentBorder" x1="916" y1="84" x2="1126" y2="152" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 140) rotate(90) scale(180 260)">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glow-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 240) rotate(-25) scale(340 180)">
-      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid-dark" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+
+    
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.55" />
     </pattern>
-    <linearGradient id="accent-line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#3B82F6"/>
-      <stop offset="50%" stop-color="#14B8A6"/>
-      <stop offset="100%" stop-color="#6366F1"/>
-    </linearGradient>
+
+    
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8" />
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#A78BFA" />
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34D399" />
+    </marker>
+
+    <style>
+      .flow-line {
+        stroke-dasharray: 5 5;
+        animation: dashFlow 1.4s linear infinite;
+      }
+      .pulse-dot {
+        animation: pulse 2s ease-in-out infinite;
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -20; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    </style>
   </defs>
 
-  <!-- Base Container -->
-  <rect width="1200" height="260" rx="16" fill="url(#bg-dark)"/>
-  <rect width="1200" height="260" rx="16" fill="url(#grid-dark)"/>
-  <rect width="1200" height="260" rx="16" fill="url(#glow-blue)"/>
-  <rect width="1200" height="260" rx="16" fill="url(#glow-teal)"/>
-  <rect x="0.75" y="0.75" width="1198.5" height="258.5" rx="15.25" stroke="#30363D" stroke-width="1.5"/>
-  <rect x="0" y="0" width="1200" height="4" rx="2" fill="url(#accent-line)"/>
+  
+  <rect width="1200" height="320" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="320" rx="16" fill="url(#grid)" />
+  <rect width="1200" height="320" rx="16" fill="url(#glowRight)" />
+  <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="15.25" stroke="#334155" stroke-opacity="0.6" stroke-width="1.5" />
 
-  <!-- Left Identity Block -->
-  <rect x="48" y="42" width="234" height="28" rx="14" fill="#0F2922" stroke="#10B981" stroke-opacity="0.45" stroke-width="1"/>
-  <circle cx="65" cy="56" r="4" fill="#34D399"/>
-  <text x="77" y="60" fill="#6EE7B7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.4">OPEN TO OPPORTUNITIES · HCMC</text>
+  
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="url(#topAccent)" />
 
-  <text x="48" y="122" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8">DO NGUYEN DAT</text>
+  
+  
+  <rect x="52" y="42" width="328" height="30" rx="15" fill="#064E3B" fill-opacity="0.35" stroke="#10B981" stroke-opacity="0.55" stroke-width="1" />
+  <circle cx="70" cy="57" r="4" fill="#34D399" class="pulse-dot" />
+  <text x="84" y="61" fill="#6EE7B7" font-size="11.5" font-weight="600" letter-spacing="0.8" class="font-mono">OPEN TO AI &amp; AUTOMATION ROLES · HCMC</text>
 
-  <text x="48" y="156" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.2">AI Automation &amp; System Builder</text>
+  
+  <text x="52" y="128" fill="#F8FAFC" font-size="46" font-weight="800" letter-spacing="1.2" class="font-sans">DO NGUYEN DAT</text>
 
-  <text x="48" y="186" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400">Building internal web apps, cross-department automations</text>
-  <text x="48" y="207" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400">&amp; data pipelines for live business operations.</text>
+  
+  <text x="52" y="166" fill="url(#titleGrad)" font-size="22" font-weight="700" class="font-sans">AI Engineer &amp; Automation Specialist</text>
 
-  <!-- Quick Facts Row -->
-  <text x="48" y="236" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="500">AI Specialist @ Blue Sky Corp  ·  Data Science @ IUH (GPA 3.13/4.0)</text>
+  
+  <text x="52" y="206" fill="#CBD5E1" font-size="15" class="font-sans">Designing LLM agents, autonomous workflows &amp; AI-powered</text>
+  <text x="52" y="229" fill="#CBD5E1" font-size="15" class="font-sans">internal platforms that eliminate manual business operations.</text>
 
-  <!-- Right Minimal System Topology Card -->
-  <rect x="740" y="38" width="416" height="184" rx="14" fill="#161B22" fill-opacity="0.9" stroke="#30363D" stroke-width="1.2"/>
-  <text x="762" y="64" fill="#8B949E" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" letter-spacing="1.2">PRODUCTION ARCHITECTURE</text>
-  <circle cx="1132" cy="60" r="3.5" fill="#34D399"/>
-  <text x="1092" y="64" fill="#34D399" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="600">LIVE</text>
+  
+  <text x="52" y="274" fill="#64748B" font-size="13" class="font-mono">AI Specialist @ Blue Sky Corp  ·  Data Science @ IUH (GPA 3.13/4.0)</text>
 
-  <!-- Node 1 -->
-  <rect x="762" y="82" width="174" height="52" rx="9" fill="#0D1117" stroke="#3B82F6" stroke-opacity="0.55" stroke-width="1"/>
-  <text x="775" y="102" fill="#93C5FD" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">01 · WEB SYSTEMS</text>
-  <text x="775" y="121" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600">React · TS · Supabase</text>
+  
+  <rect x="616" y="32" width="536" height="256" rx="14" fill="#090E1A" fill-opacity="0.88" stroke="#1E293B" stroke-width="1.5" />
 
-  <!-- Connector 1 -> 2 -->
-  <path d="M 936 108 L 958 108" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <polygon points="956,104 963,108 956,112" fill="#60A5FA"/>
+  
+  <text x="642" y="60" fill="#94A3B8" font-size="11.5" font-weight="600" letter-spacing="1.4" class="font-mono">AGENTIC WORKFLOW PIPELINE</text>
+  <text x="1062" y="60" fill="#34D399" font-size="11.5" font-weight="600" letter-spacing="1" class="font-mono">ACTIVE</text>
+  <circle cx="1122" cy="56" r="4.5" fill="#34D399" class="pulse-dot" />
 
-  <!-- Node 2 -->
-  <rect x="964" y="82" width="172" height="52" rx="9" fill="#0D1117" stroke="#14B8A6" stroke-opacity="0.55" stroke-width="1"/>
-  <text x="977" y="102" fill="#5EEAD4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">02 · AUTOMATION</text>
-  <text x="977" y="121" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600">n8n · Power Automate</text>
+  
+  <rect x="642" y="82" width="212" height="68" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1.2" />
+  <circle cx="658" cy="103" r="3.5" fill="#38BDF8" />
+  <text x="670" y="107" fill="#38BDF8" font-size="11" font-weight="700" letter-spacing="0.8" class="font-mono">01 · TRIGGER / INPUT</text>
+  <text x="658" y="131" fill="#E2E8F0" font-size="13.5" font-weight="600" class="font-sans">Webhook · Gmail · Cron</text>
 
-  <!-- Node 3 (Full Bottom) -->
-  <rect x="762" y="148" width="374" height="52" rx="9" fill="#0D1117" stroke="#6366F1" stroke-opacity="0.55" stroke-width="1"/>
-  <text x="775" y="168" fill="#A5B4FC" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="700">03 · DATA, ML &amp; OPERATIONS GOVERNANCE</text>
-  <text x="775" y="187" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600">Python · Airflow · Docker · RBAC · UAT · AWS</text>
+  
+  <path d="M 854 116 L 906 116" stroke="#38BDF8" stroke-width="1.8" class="flow-line" marker-end="url(#arrowCyan)" />
+
+  
+  <rect x="914" y="82" width="212" height="68" rx="10" fill="#1E1B4B" fill-opacity="0.7" stroke="url(#agentBorder)" stroke-width="1.8" />
+  <circle cx="930" cy="103" r="3.5" fill="#A78BFA" class="pulse-dot" />
+  <text x="942" y="107" fill="#C4B5FD" font-size="11" font-weight="700" letter-spacing="0.8" class="font-mono">02 · AI AGENT CORE</text>
+  <text x="930" y="131" fill="#FFFFFF" font-size="13.5" font-weight="700" class="font-sans">Gemini API · LLM · OCR</text>
+
+  
+  <path d="M 1020 150 L 1020 174 L 748 174 L 748 190" stroke="#A78BFA" stroke-width="1.8" fill="none" class="flow-line" marker-end="url(#arrowPurple)" />
+
+  
+  <rect x="642" y="198" width="212" height="68" rx="10" fill="#0F172A" stroke="#34D399" stroke-opacity="0.55" stroke-width="1.2" />
+  <circle cx="658" cy="219" r="3.5" fill="#34D399" />
+  <text x="670" y="223" fill="#34D399" font-size="11" font-weight="700" letter-spacing="0.8" class="font-mono">03 · AUTOMATION</text>
+  <text x="658" y="247" fill="#E2E8F0" font-size="13.5" font-weight="600" class="font-sans">n8n · Apps Script · Make</text>
+
+  
+  <path d="M 854 232 L 906 232" stroke="#34D399" stroke-width="1.8" class="flow-line" marker-end="url(#arrowGreen)" />
+
+  
+  <rect x="914" y="198" width="212" height="68" rx="10" fill="#0F172A" stroke="#64748B" stroke-opacity="0.7" stroke-width="1.2" />
+  <circle cx="930" cy="219" r="3.5" fill="#94A3B8" />
+  <text x="942" y="223" fill="#94A3B8" font-size="11" font-weight="700" letter-spacing="0.8" class="font-mono">04 · APPS &amp; DATA</text>
+  <text x="930" y="247" fill="#E2E8F0" font-size="13.5" font-weight="600" class="font-sans">React · Supabase · Airflow</text>
 </svg>
